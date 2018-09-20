@@ -7,6 +7,7 @@ import flushPromises from 'flush-promises'
 jest.mock('./api')
 
 test('renders items resolved from fetchItems', async () => {
+  expect.assertions(1)
   const items = [{}, {}, {}]
   fetchItems.mockResolvedValue(items)
   const wrapper = shallowMount(ItemView)
@@ -17,6 +18,7 @@ test('renders items resolved from fetchItems', async () => {
 })
 
 test('renders error if fetchItems rejects', async () => {
+  expect.assertions(1)
   fetchItems.mockRejectedValue(new Error('500'))
   const wrapper = shallowMount(ItemView)
 
