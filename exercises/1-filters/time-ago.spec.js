@@ -40,15 +40,27 @@ describe('timeAgo', () => {
     expect(timeAgo(unixTime - minutes(1))).toBe('1 minute ago')
   })
 
-  test('returns plural minutes')
+  test('returns plural minutes', () => {
+    expect(timeAgo(unixTime - minutes(10))).toBe('10 minutes ago')
+  })
 
-  test('returns singular hour')
+  test('returns singular hour', () => {
+    expect(timeAgo(unixTime - hours(1))).toBe('1 hour ago')
+  })
 
-  test('returns plural hours')
+  test('returns plural hours', () => {
+    expect(timeAgo(unixTime - hours(2))).toBe('2 hours ago')
+  })
 
-  test('returns singular day')
+  test('returns singular day', () => {
+    expect(timeAgo(unixTime - days(1))).toBe('1 day ago')
+  })
 
-  test('returns plural days')
+  test('returns plural days', () => {
+    expect(timeAgo(unixTime - days(2))).toBe('2 days ago')
+  })
 
-  test('returns day rounded to nearest value')
+  test('returns day rounded to nearest value', () => {
+    expect(timeAgo(unixTime - days(1) - hours(23))).toBe('2 days ago')
+  })
 })
