@@ -21,7 +21,8 @@
     "test:vuex-store": "jest --testRegex '8-vuex-store/.*\\.spec\\.js$'",
     "test:vuex-store:solutions": "jest --testRegex '8-vuex-store/.*\\.solution\\.js$'",
     "test:vuex-in-components": "jest --testRegex '9-vuex-in-components/.*\\.spec\\.js$'",
-    "test:vuex-in-components:solutions": "jest --testRegex '9-vuex-in-components/.*\\.solution\\.js$'"
+    "test:vuex-in-components:solutions": "jest --testRegex '9-vuex-in-components/.*\\.solution\\.js$'",
+    "test:snapshot-tests": "jest --projects --testRegex '10-snapshot-tests/.*\\.spec\\.js$'"
   },
   "dependencies": {
     "@babel/core": "^7.0.1",
