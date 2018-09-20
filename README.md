@@ -2,4 +2,4 @@
 
 > Workshop on testing Vue applications
 
-Slides available at https://slides.com/eddyerburgh/testing-workshop
+Slides available at https://slides.com/eddyerburgh/testing-vue-workshop
